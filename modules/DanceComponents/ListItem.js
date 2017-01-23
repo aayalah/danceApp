@@ -1,6 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router'
+
 export default React.createClass({
+  listItemPressed() {
+
+  },
+  getList() {
+    return  this.props.data.map((item) => <Link className="itemLink" to={"/info/" + item.name}><div className="listItem" key={item.name}><h1>{item.name}</h1></div></Link>)
+  },
   render() {
-    return (this.props.data.map((item)=> <div><h1></h1></div>));
+    return <div className="listContainer">{this.getList()}</div>;
   }
 })

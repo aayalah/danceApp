@@ -1,0 +1,117 @@
+.app {
+  width:100%;
+  background-color: #F5F5F5;
+  height: 100%;
+}
+
+article {
+
+  width:100%;
+  height:auto;
+  text-align: center;
+}
+
+
+header {
+  text-align: center;
+  background-color: #E0E0E0;
+  width:100%;
+  height: 100px;
+}
+
+.listItem {
+
+  padding:10px;
+  background-color:#FFFFFF;
+  margin-bottom: 10px;
+}
+
+section {
+
+  padding-left:55px;
+  padding-right: 55px;
+}
+
+.mainContainers {
+  margin-bottom: 10px;
+}
+
+html {
+  height:100%;
+
+}
+
+#app {
+  height: 100%;
+}
+
+.itemLink {
+  text-decoration: none;
+  color: black;
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+}
+html {
+/*  overflow-y: hidden;*/
+}
+
+.loginContainer{
+  text-align:center;
+}
+
+.login {
+  transform: translateY(-47%);
+top: 45%;
+position: absolute;
+left: 0;
+right: 0;
+
+}
+.inputContainer {
+  margin:10px;
+}
+
+.label {
+  display:inline;
+}
+
+.postContainer {
+  text-align:center;
+  width:320px;
+  background-color: white;
+  padding: 5px;
+  display:inline-block;
+  margin:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col {
+  display:inline;
+  margin:5px;
+}
+
+.col > button {
+  width:33%;
+}
+
+button {
+  padding:5px;
+}
+input {
+  height:15px;
+}
+
+.smallVideo {
+  width:300px;
+}
+
+i {
+  margin-right:5px;
+}
+
+span.link:hover {
+  text-decoration: underline;
+}

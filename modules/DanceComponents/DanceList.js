@@ -1,12 +1,12 @@
 import React from 'react'
 import ListItem from './ListItem.js'
-
+import danceStyles from '../../data.js'
 export default React.createClass({
   render() {
     return (
-      <article>
+     <article>
         <section>
-          <ListItem data={[{name:"waltz"}]}/>
+          <ListItem data={danceStyles}/>
         </section>
       </article>
     )

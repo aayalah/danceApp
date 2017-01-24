@@ -119,3 +119,15 @@ span.link:hover {
 .message_hidden {
   display:none;
 }
+
+.modalContainer {
+  z-index: 1;
+position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+maax-height:500px;
+width: 320px;
+overflow-y: auto;
+background-color: white;
+}

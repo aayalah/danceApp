@@ -115,3 +115,7 @@ i {
 span.link:hover {
   text-decoration: underline;
 }
+
+.message_hidden {
+  display:none;
+}

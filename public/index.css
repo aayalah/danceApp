@@ -33,6 +33,7 @@ section {
 }
 
 .mainContainers {
+  position:relative;
   margin-bottom: 10px;
 }
 
@@ -151,8 +152,8 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-.login > div >  button {
-    background-color: #4CAF50;
+button {
+    background-color: #454545;
     color: white;
     padding: 14px 20px;
     margin: 8px 5px;
@@ -194,4 +195,10 @@ input[type=text], input[type=password] {
   right: 0;
   bottom: 0;
 
+}
+
+.addVideo{
+  position: absolute;
+  top:0;
+  right:0;
 }

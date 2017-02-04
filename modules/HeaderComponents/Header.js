@@ -5,7 +5,7 @@ export default React.createClass({
     return (
       <div className="mainContainers">
       <header></header>
-      <SearchBar/>
+
       </div>
     )
   }

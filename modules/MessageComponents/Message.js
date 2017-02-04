@@ -13,9 +13,9 @@ export default React.createClass({
             <p>
             This is a message
             </p>
-            <div className="col"><i className="glyphicon glyphicon-comment"/><span className="link">Reply</span></div>
-            <div className="col"><i className="fa fa-thumbs-o-up"/><span className="link"> Like</span></div>
             </div>
-            </div>;
+            <hr/>
+            </div>
+            ;
   }
 })

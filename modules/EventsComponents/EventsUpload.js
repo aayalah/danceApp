@@ -13,6 +13,7 @@ export default React.createClass({
               <span>Event Title: </span><input></input>
               <span>Date:</span><input></input>
               <span> Location: </span><input></input>
+              <span>Category:</span><input></input>
               <h4> Description </h4>
               <textarea>
               </textarea>

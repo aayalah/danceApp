@@ -13,6 +13,7 @@ export default React.createClass({
               <form>
                 <span>Title: </span><input></input>
                 <span>Video:</span><input></input>
+                <span>Category:</span><input></input>
                 <h4> Description </h4>
                 <textarea>
                 </textarea>

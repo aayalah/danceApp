@@ -10,18 +10,21 @@ export default React.createClass({
   render() {
     return <div className="postContainer">
               <div>
-              <video className="smallVideo" src="/waltz.mp4" controls>
+              <video className="smallVideo" src="/waltz.mp4">
               </video>
               </div>
-              <hr/>
-              <p>
-              Description
-              </p>
-              <hr/>
-              <div className="col"><i className="glyphicon glyphicon-comment"/><span onClick={this.displayComments} className="link">Comment</span></div>
-              <div className="col"><i className="fa fa-thumbs-o-up"/><span className="link"> Like</span></div>
-              <hr/>
-              <Message display ={this.state.display}/>
+
           </div>;
   }
 })
+
+
+/*<hr/>
+<p>
+Description
+</p>
+<hr/>
+<div className="col"><i className="glyphicon glyphicon-comment"/><span onClick={this.displayComments} className="link">Comment</span></div>
+<div className="col"><i className="fa fa-thumbs-o-up"/><span className="link"> Like</span></div>
+<hr/>
+<Message display ={this.state.display}/>*/

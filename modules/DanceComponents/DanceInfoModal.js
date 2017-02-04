@@ -24,7 +24,9 @@ export default React.createClass({
               <h3> User Name </h3>
               <h6> Views: </h6>
               <hr/>
+              <div className="messageContainer">
               <Message display ={this.state.display}/>
+              </div>
               </div>
           </div>;
   }

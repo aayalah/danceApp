@@ -9,11 +9,9 @@ export default React.createClass({
   },
   render() {
     return <div className="postContainer">
-              <div>
-              <video className="smallVideo" src="/waltz.mp4">
-              </video>
-              </div>
-
+              <video className="smallVideo" src="/waltz.mp4"></video>
+              <hr/>
+              <h6> Title </h6>
           </div>;
   }
 })

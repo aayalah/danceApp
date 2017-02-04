@@ -184,10 +184,14 @@ input[type=text], input[type=password] {
   overflow-y: auto;
 }
 
-
-.modal {
-  position:fixed;
-  top:0px;
-  left:0px;
+.videoModal {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: rgba(0,0,0,0.4);
+  display: block;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+
 }

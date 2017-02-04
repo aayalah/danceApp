@@ -8,7 +8,11 @@ export default React.createClass({
     this.setState({display: !this.state.display})
   },
   render() {
-    return <div className="modal">
+
+    //var classes = "modalContainer";
+    //classes += (!this.props.display ? ",hidden" : "");
+
+    return <div className="videoModal">
             <div className="modalContainer">
               <div className="col-1">
               <div>

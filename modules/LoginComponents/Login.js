@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
+import createUser from '../../api/login'
 export default React.createClass({
   getInitialState() {
     return {uname:"", psw:"", psw2:"", visible:false};
@@ -14,14 +15,24 @@ export default React.createClass({
     this.setState({psw2:event.target.value});
   },
   onLogin() {
-    //fetch
+    console.log("inside");
+    localStorage.setItem("user", this.state.uname)
+    localStorage.setItem("password", this.state.psw)
+    browserHistory.push('/list');
   },
   onCreateUser(){
+
+
     this.setState({visible:true});
   },
   onSubmit(){
-    //fetch
-    this.setState({visible:false});
+    var loginComp = this;
+    createUser(this.state.uname, this.state.psw).then(function(user) {
+      loginComp.setState({visible:false});
+    }).catch(function(error) {
+      console.log(error);
+    });
+
   },
   onCancel(){
     this.setState({visible:false});

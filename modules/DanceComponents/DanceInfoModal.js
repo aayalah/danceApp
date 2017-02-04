@@ -8,7 +8,8 @@ export default React.createClass({
     this.setState({display: !this.state.display})
   },
   render() {
-    return <div className="modalContainer">
+    return <div className="modal">
+            <div className="modalContainer">
               <div className="col-1">
               <div>
                 <video className="smallVideo" src="/waltz.mp4" controls></video>
@@ -28,6 +29,7 @@ export default React.createClass({
               <Message display ={this.state.display}/>
               </div>
               </div>
+          </div>
           </div>;
   }
 })

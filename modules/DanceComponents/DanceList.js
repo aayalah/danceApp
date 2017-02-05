@@ -2,6 +2,7 @@ import React from 'react'
 import ListItem from './ListItem.js'
 import danceStyles from '../../data.js'
 import {getCategories} from '../../api/login'
+
 export default React.createClass({
   getInitialState() {
     return {data: []};

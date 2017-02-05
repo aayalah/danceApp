@@ -185,7 +185,7 @@ button {
   overflow-y: auto;
 }
 
-.videoModal {
+.mymodal {
   position: fixed;
   top: 0;
   left: 0;
@@ -201,4 +201,32 @@ button {
   position: absolute;
   top:0;
   right:0;
+}
+
+
+textarea {
+  width:100%;
+  resize: none;
+}
+
+.uploadContainer{
+  z-index: 1;
+position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+max-height:500px;
+overflow-y: auto;
+background-color: white;
+text-align:left;
+padding:15px;
+}
+
+
+.categoryLabel{
+  padding: 10px;
+  margin-right:5px;
+  background-color: #454545;
+
+
 }

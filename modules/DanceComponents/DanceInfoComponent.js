@@ -1,5 +1,5 @@
 import React from 'react'
-import Message from '../MessageComponents/Message.js'
+
 export default React.createClass({
   getInitialState: function() {
    return {display: false};
@@ -7,11 +7,14 @@ export default React.createClass({
   displayComments(e) {
     this.setState({display: !this.state.display})
   },
+  videoClicked() {
+    this.props.videoClicked(this.props.video);
+  },
   render() {
-    return <div className="postContainer">
-              <video className="smallVideo" src="/waltz.mp4"></video>
+    return <div onClick={this.videoClicked} className="postContainer">
+              <video className="smallVideo" src={this.props.video.uri}></video>
               <hr/>
-              <h6> Title </h6>
+              <h6> {this.props.video.title} </h6>
           </div>;
   }
 })

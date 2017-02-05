@@ -31,7 +31,7 @@ var getCategories = function(username, password) {
   headers.append("Authorization", "Basic " + btoa(auth));
 
   console.log(btoa(auth));
-  var request = new Request('http://localhost:8090/api/category', {
+  var request = new Request(url + '/api/category', {
 	method: 'GET',
 	headers: headers,
   mode: 'cors'
@@ -49,8 +49,8 @@ var getVideos = function(username, password, category) {
 
   var auth = username + ":" + password;
   headers.append("Authorization", "Basic " + btoa(auth));
-  console.log('http://localhost:8090/api/category/'+category+'/videos');
-  var request = new Request('http://localhost:8090/api/category/'+category+'/videos', {
+
+  var request = new Request(url + '/api/category/'+category+'/videos', {
 	method: 'GET',
 	headers: headers,
   mode: 'cors'
@@ -68,8 +68,8 @@ var submitComment = function(username, password, video, text) {
 
   var auth = username + ":" + password;
   headers.append("Authorization", "Basic " + btoa(auth));
-  console.log('http://localhost:8090/api/comments/'+video);
-  var request = new Request('http://localhost:8090/api/comments/'+video, {
+
+  var request = new Request(url + '/api/comments/'+video, {
   method: 'POST',
   headers: headers,
   mode: 'cors',
@@ -91,8 +91,8 @@ var getComments = function(username, password, video) {
 
   var auth = username + ":" + password;
   headers.append("Authorization", "Basic " + btoa(auth));
-  console.log('http://localhost:8090/api/comments/'+video);
-  var request = new Request('http://localhost:8090/api/comments/'+video, {
+
+  var request = new Request(url + '/api/comments/'+video, {
   method: 'GET',
   headers: headers,
   mode: 'cors'
@@ -122,7 +122,7 @@ data.append("categories", categories);
 data.append("description", description);
 data.append("file", file);
 
-var request = new Request('http://localhost:8090/api/videos', {
+var request = new Request(url + '/api/videos', {
 method: 'POST',
 headers: headers,
 mode: 'cors',

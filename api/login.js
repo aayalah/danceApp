@@ -1,8 +1,16 @@
+if(process.env.NODE_ENV === "production"){
+  var url = 'https://danceappserver.herokuapp.com'
+} else {
+  var url = 'http://localhost:8090'
+}
+
+
 export default function(username, password){
+  console.log(url);
   var headers = new Headers();
   headers.append("Content-Type", "application/json");
   headers.append("Access-Control-Allow-Origin", "*");
-  var request = new Request('http://localhost:8090/api/users', {
+  var request = new Request(url + '/api/users', {
 	method: 'POST',
 	headers: headers,
   mode: 'cors',

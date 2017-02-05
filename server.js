@@ -1,6 +1,3 @@
-
-// server.js
-import React from 'react'
 var express = require('express')
 var path = require('path')
 

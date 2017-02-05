@@ -1,8 +1,5 @@
-if(process.env.NODE_ENV === "production"){
-  var url = 'https://danceappserver.herokuapp.com'
-} else {
-  var url = 'http://localhost:8090'
-}
+
+var url = 'https://danceappserver.herokuapp.com' //'http://localhost:8090'
 
 
 export default function(username, password){
